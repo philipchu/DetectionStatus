@@ -1,0 +1,18 @@
+from enum import Enum
+
+
+class DetectionStatus(str, Enum):
+    SUCCESS = 1
+    NO_CONNECTION = 2
+    SMALL_IMAGE = 3
+    RECENTER_IMAGE = 4
+    UNKNOWN = 5
+    INVALID_CAR_LOOKUP = 6
+    NO_FILE = 7
+    EXCEEDED_QUOTA = 8
+    EXCEEDED_REQ_PER_SECOND = 9
+    LOW_PROBABILITY_DETECTION = 10
+    NO_SIDE_PIC = 11
+    NO_MATCH = 12
+    LOW_PROBABILITY_MATCH = 13
+    PERCY_FAILURE = 14
