@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class DetectionStatus(str, Enum):
+class DetectionStatus(int, Enum):
     SUCCESS = 1
     NO_CONNECTION = 2
     SMALL_IMAGE = 3
