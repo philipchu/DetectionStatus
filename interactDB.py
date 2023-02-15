@@ -56,6 +56,7 @@ def updateResult(txnKey, stringToStore, txnType="", debug = False):
         {"txnKey": txnKey, "txnType": txnType}, {"$set": {"data": stringToStore}}
     )
 
+
 ##  get an object from a database ##
 ##  inputs: key, txnType
 ##  outputs: "data" field associated with key/txnType
@@ -74,4 +75,4 @@ def getResult(txnKey, txnType="", debug=False):
         return matches[0]["data"]
     else:
         logger.error(f"{len(matches)} matches for txnKey: {txnKey}")
-        return "error"
+        return len(matches)
