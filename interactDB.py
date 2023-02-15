@@ -39,16 +39,18 @@ def getTxnKey(image_encoded, byte_length=128):
 ##  store a result in a MongoDB database ##
 ##  inputs: key, data to store
 ##  outputs: ObjectID
-def storeResult(txnKey, stringToStore, txnType=""):
-    logger.info(f"inserting into {os.environ.get('MONGO_URL')}")
+def storeResult(txnKey, stringToStore, txnType="", debug = False):
+    if debug:
+        logger.info(f"getting from {os.environ.get('MONGO_URL')}")
     txns = getDatabase()
     return txns.insert_one(
         {"txnKey": txnKey, "txnType": txnType, "data": stringToStore}
     )
 
 
-def updateResult(txnKey, stringToStore, txnType=""):
-    logger.info(f"updating {os.environ.get('MONGO_URL')}")
+def updateResult(txnKey, stringToStore, txnType="", debug = False):
+    if debug:
+        logger.info(f"getting from {os.environ.get('MONGO_URL')}")
     txns = getDatabase()
     return txns.update_one(
         {"txnKey": txnKey, "txnType": txnType}, {"$set": {"data": stringToStore}}
@@ -57,8 +59,9 @@ def updateResult(txnKey, stringToStore, txnType=""):
 ##  get an object from a database ##
 ##  inputs: key, txnType
 ##  outputs: "data" field associated with key/txnType
-def getResult(txnKey, txnType=""):
-    logger.info(f"getting from {os.environ.get('MONGO_URL')}")
+def getResult(txnKey, txnType="", debug=False):
+    if debug:
+        logger.info(f"getting from {os.environ.get('MONGO_URL')}")
     txns = getDatabase()
 
     if txnType == "":
@@ -66,7 +69,6 @@ def getResult(txnKey, txnType=""):
     else:
         matches = txns.find({"txnKey": txnKey, "txnType": txnType})
     matches = list(matches)
-    print(matches)
 
     if len(matches) == 1:
         return matches[0]["data"]
