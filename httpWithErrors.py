@@ -3,14 +3,16 @@ import requests
 
 def getE(url, json={}, params={}):
     try:
-        requests.get(url, params=params, json=json)
+        resp = requests.get(url, params=params, json=json)
+        return resp
     except requests.exceptions.RequestException as e:
         SystemExit(e)
 
 
 def postE(url, json={}, params={}, headers={}):
     try:
-        requests.post(url, params=params, json=json, headers=headers)
+        resp = requests.post(url, params=params, json=json, headers=headers)
+        return resp
     except requests.exceptions.RequestException as e:
         SystemExit(e)
 
