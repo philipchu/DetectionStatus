@@ -8,9 +8,9 @@ def getE(url, json={}, params={}):
         SystemExit(e)
 
 
-def postE(url, json={}, params={}):
+def postE(url, json={}, params={}, headers={}):
     try:
-        requests.post(url, params=params, json=json)
+        requests.post(url, params=params, json=json, headers=headers)
     except requests.exceptions.RequestException as e:
         SystemExit(e)
 
