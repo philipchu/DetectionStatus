@@ -26,8 +26,8 @@ def getDatabase():
 ##  inputs: string, length to hash
 ##  outputs: datestamped hash
 def getTxnKey(image_encoded, byte_length=128):
-    byte_length = min(byte_length, len(image_encoded))
-    imageHash = image_encoded[0 : byte_length - 1]
+    byte_length = min(byte_length, int(len(image_encoded)/4)*4)
+    imageHash = image_encoded[0 : byte_length]
     timeStamp = datetime.now().strftime("%m%d%Y%H%M%S")
     txnKey = str(
         base64.b64encode(hashlib.md5(base64.b64decode(imageHash + "==")).digest())
