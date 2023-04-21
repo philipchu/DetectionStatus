@@ -25,13 +25,16 @@ def getDatabase():
 ##  create a transaction key from a set of encoded bytes (string-like object) ##
 ##  inputs: string, length to hash
 ##  outputs: datestamped hash
-def getTxnKey(image_encoded, byte_length=128):
+def getTxnKey(image_encoded, byte_length=128, is_string=False):
     byte_length = min(byte_length, int(len(image_encoded)/4)*4)
-    imageHash = image_encoded[0 : byte_length]
+    imageHash = image_encoded[0 : byte_length-1]
     timeStamp = datetime.now().strftime("%m%d%Y%H%M%S")
-    txnKey = str(
-        base64.b64encode(hashlib.md5(base64.b64decode(imageHash + "==")).digest())
-    )
+    if not is_string:
+        imageHash = imageHash + '=='
+    hash_input = base64.b64decode(imageHash)
+    hash_output = hashlib.md5(hash_input).digest()
+    txnKey = str(base64.b64encode(hash_output))
+
     txnKey = timeStamp + txnKey
     return txnKey
 
