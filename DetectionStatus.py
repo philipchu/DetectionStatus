@@ -16,3 +16,4 @@ class DetectionStatus(int, Enum):
     NO_MATCH = 12
     LOW_PROBABILITY_MATCH = 13
     PERCY_FAILURE = 14
+    MAPPING_FAILURE = 15
