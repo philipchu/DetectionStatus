@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "seraphic-plexus-387521",
+  "private_key_id": "9058cfd29eeaaa954823a7d4262107c1f2ced17f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDNvCCsSEC9mxwy\n84nj/B6ChosQri+Ey85+4nWdScclJWQGRGryDqDRtR6646Bf2HD/xrb75bT/WhUM\njgATpVDYtY7mgHPIckZOk1/bb6k1M7n3HRgq5OFq/OlPpQUbWdqNQUr7dLS0JXnv\ndgzcv+6E6WGwZ/rPUEUpcvi1cjxX5obfeMPUNwbPoX3AtciO+TkWjPhGbfK0gH0z\ngc6rqBUe86rQ4/iVI14BixxgOeu9m1cI5MZrNfJbglH5IQ7JE+PcEoVRFRpzw3L+\nfqE48VZOhdAejE8KdkPJ1/NT1okyo9jkwe5JFiNZyRTiLgcIBnGXNpH2TPPmpqVv\nmTEQGtR5AgMBAAECggEAAzJfe5h/0Qe+T22zVc85a3kgY2Ohf2Rp/VS9fnKCsqll\nvXyGAOQzTC7j9Fl3HiYkfgTzcO89JGlHlx4EaEm9pjBkBmGL6wXDi+hZqUo54dwU\n5qnAEg05EiAt6+aPhsDwVsON9mGg29pn46L884J+oqK8ZDD+wlvn8eCZzA/4r2ZG\nzP5HDCdVI9ufQh9fR3xPgIGZx0VF6E7/EK+VRD9Yb6mEv9mmaoPu1W0+8g7ZLcXw\nnnM9+suEKoX6KcV8VL7OzLiwDkX1CpNWTIWjFeM+KW1uFppvhTEWC8r7bZWLrHII\nDsEbn4EkJJaB1bpjmEnIqtbkbBka2AMLrGlvFnZMtQKBgQDuxWW7cqgbbqDjbBbX\nJnzbc3BgNl629YcG7L7rVMEwLbVMPseRBxcAOXXT930iKDNTedV5Jy37PcJo5cxk\nOUIjrkbnqcZlgYr8izX2Wb4f78EpRXDIi9Ibzj2SWPN1+t2IzU83i2sBwxG+cYxT\n/P043TSJBsNdsWx/jKuoaiYJswKBgQDclHtvAgSUmeBlRHUG+tCVvlHmslyIhoT5\nVMKQlzAg8GrDHklrno1o64Jgd161JgKazFmweN29ygAYEKdZIwQPO+sYgoRs6hS2\ngbaKT31GyyL2HJmb33El1aLJaphY2wBs40jjVabcxpGFz1mNf9ZzpZagBjKeudJn\nDKG9TIf7IwKBgAobROEYS1FN73Vw386fjG1lh34rDvtDjUGXx8UCQ2McrC3cAmp7\nGFgkFn6wXRWTCgkggQ6tv96AkLgL8gjT+56zA8FOiF1HjHCAG/qfddK4PT7X95wl\nfvE6W5TUOwnlYncl6ZJ6Tj822IttFvl/HeDITC74oFBY8DS96Y4pYA7NAoGBAK8R\njhIh6N7EbmwRdEyQ3uIqhrhyEa0uDvYRBsdZp5JNHn80V5N56MRAP18u/tUJkQGp\ndPnyRBPw8jgnZ5sAhqVMqh/u3wnOk5fyxZ1qz4RTj7EELAqhwh0EPUpdNwM29lR1\n5BDCl0gctb0dP/dlYiCxaSYjJSQDWfH9/ZTP3BE/AoGAKM6L03lqWNilN2hc1zTT\nNEIo93EW+G7PlDtA//AyPIwEOofzy0uw3QXflaOikk8601fwa2wGblMk+0Rgxdri\nnJThT47XIsNnVvBxPikCkeRWjevLOpa97f+4tMG1j5JnM1o9ao0Ync5bx8Fs+Xhq\niG+ypODpCCA/jeASGWCsiPM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-drive-writer@seraphic-plexus-387521.iam.gserviceaccount.com",
+  "client_id": "106094878595319745196",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-drive-writer%40seraphic-plexus-387521.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
